@@ -23,3 +23,10 @@ Numbers: locale-aware parsing and EUR formatting.
 CartTest: JUnit 5 calculation, validation, parsing and bundle tests.
 pom.xml: JavaFX, JUnit 5, and JaCoCo; verify requires 100% line and branch coverage of the model package.
 The assignment says “four” files but lists five languages, so all five are included. It lists en_UK alongside an en_US filename; this project consistently uses en_US. It retains the requested ar_AR resource filename (AR is not an Arabic-speaking country code); EUR is set explicitly and Arabic layout is selected by language. An English base bundle provides fallback text.
+
+
+
+
+References
+Official OpenJFX setup documentation: Maven dependencies and launcher configuration.
+Official JaCoCo check documentation: coverage rule configuration.
