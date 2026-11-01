@@ -56,8 +56,15 @@ public class Controller {
     }
     private void localize() {
         root.setNodeOrientation(locale.getLanguage().equals("ar") ? NodeOrientation.RIGHT_TO_LEFT : NodeOrientation.LEFT_TO_RIGHT);
-        title.setText("Khaled Marai / " + text("title"));
-        if (stage != null) stage.setTitle(title.getText());
+        String displayName = locale.getLanguage().equals("ar")
+                ? "خالد مرعي"
+                : "Khaled Marai";
+
+        title.setText(displayName + " / " + text("title"));
+
+        if (stage != null) {
+            stage.setTitle(title.getText());
+        }
         subtitle.setText(text("subtitle")); languageLabel.setText(text("language"));
         countLabel.setText(text("count")); count.setPromptText(text("countPrompt"));
         create.setText(text("create")); calculate.setText(text("calculate")); totalLabel.setText(text("total"));
