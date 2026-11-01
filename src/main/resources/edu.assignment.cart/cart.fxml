@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.assignment.cart.Controller" fx:id="root" spacing="16">
+    <padding><Insets top="28" right="30" bottom="24" left="30"/></padding>
+    <Label fx:id="title" text="%title" styleClass="heading"/>
+    <Label fx:id="subtitle" text="%subtitle" styleClass="muted"/>
+    <HBox spacing="12" alignment="CENTER_LEFT"><Label fx:id="languageLabel" text="%language"/><ComboBox fx:id="language" prefWidth="170"/></HBox>
+    <Separator/>
+    <HBox spacing="12" alignment="CENTER_LEFT"><Label fx:id="countLabel" text="%count"/><TextField fx:id="count" prefWidth="90"/><Button fx:id="create" text="%create" onAction="#createItems"/></HBox>
+    <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS"><content><VBox fx:id="rows" spacing="10"/></content></ScrollPane>
+    <Label fx:id="error" wrapText="true" styleClass="error" minHeight="42"/>
+    <HBox spacing="20" alignment="CENTER_LEFT"><Button fx:id="calculate" text="%calculate" onAction="#calculate" styleClass="primary"/><Region HBox.hgrow="ALWAYS"/><VBox spacing="4"><Label fx:id="totalLabel" text="%total" styleClass="muted"/><Label fx:id="totalValue" styleClass="total"/></VBox></HBox>
+</VBox>
