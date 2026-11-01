@@ -1,0 +1,10 @@
+.root { -fx-font-family: "Segoe UI", "Noto Sans", sans-serif; -fx-font-size: 14px; -fx-background-color: #f4f7fb; -fx-text-fill: #16243c; }
+.heading { -fx-font-size: 28px; -fx-font-weight: bold; }
+.muted { -fx-text-fill: #59677d; }
+.item-row { -fx-padding: 16px; -fx-background-color: white; -fx-background-radius: 10px; }
+.scroll-pane, .scroll-pane > .viewport { -fx-background-color: transparent; }
+.button { -fx-padding: 10px 16px; -fx-background-radius: 7px; -fx-cursor: hand; }
+.primary { -fx-background-color: #245bc4; -fx-text-fill: white; -fx-font-weight: bold; }
+.text-field, .combo-box { -fx-padding: 8px; -fx-background-radius: 5px; }
+.total { -fx-font-size: 29px; -fx-font-weight: bold; -fx-text-fill: #174fae; }
+.error { -fx-text-fill: #ad2535; }
